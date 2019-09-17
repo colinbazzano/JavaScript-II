@@ -3,7 +3,17 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
+function state(stateName) {
+  const city1 = 'Salt Lake City';
+  const city2 = 'Moab';
+  console.log(`When you are visiting ${stateName} a lot of people stay in ${city1} and take a road trip down south to ${city2} because of it's endless outdoor fun.`);
+  function state2(stateName2) {
+    const city3 = 'Norfolk';
+    console.log(`Even though I am from ${city3}, ${stateName2}, I once lived in ${city1}, ${stateName} and would travel to ${city2} frequently.`);
+  }//this closes state2
+  state2('Connecticut');
+}//this closes state
+state('Utah');
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
